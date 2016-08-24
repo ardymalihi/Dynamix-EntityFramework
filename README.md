@@ -1,16 +1,10 @@
-Easily creates Entity Data Model at runtime.
+*Entity Framework Dynamic Model Builder
 
-If you are tired of creating,changing and synchronizing your data model for yours projects all the time.
-If you are a big fan of dynamic programming and don't really care about intellisense, Dynamic Data Model Builder is for you.
-With the help of this library, you will be able to get the whole database context as well as POCO classes with their navigation properties just by introducing the connection string to the Database class and everything will be taken care of.
+*Easily creates Entity Data Model at runtime.
+
+By creating DbContext and Poco classes at runtime using Csharp Compiler, this library helps those developers who want to create complex and dynamic type of applications like ERP/CRM or create dynamic Micro Services whith CRUD operation without writing code.
 
 *How to Use:
-
-*Limitation:
-Entity Framework doeas not allow entity property names to begin with underscore or other illegal characters.
-Required Primary key for all the tables.
-Columns cannot have the same name as their own tables.
-
 
 *Creating & Loading:
 
@@ -57,3 +51,8 @@ IpropertyNotifyChanged has been implemented
 It supports entity relationship (navigation properties)
 supports multiple primary keys
 supports multiple foreign keys
+
+*Limitation:
+Entity Framework doeas not allow entity property names to begin with underscore or other illegal characters.
+Required Primary key for all the tables.
+Columns cannot have the same name as their own tables.
