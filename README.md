@@ -2,7 +2,7 @@ Entity Framework Dynamic Model Builder
 
 *Easily creates Entity Data Model at runtime.
 
-By creating DbContext and Poco classes at runtime using Csharp Compiler, this library helps those developers who want to create complex and dynamic type of applications like ERP/CRM or create dynamic Micro Services whith CRUD operation without writing code.
+By creating DbContext and Poco classes at runtime using C# Compiler, this library helps those developers who want to create complex and dynamic type of applications like ERP/CRM or create dynamic Micro Services whith CRUD operation without writing code.
 
 *How to Use:
 
