@@ -82,7 +82,7 @@
             this.txtConnectionString.Name = "txtConnectionString";
             this.txtConnectionString.Size = new System.Drawing.Size(572, 20);
             this.txtConnectionString.TabIndex = 9;
-            this.txtConnectionString.Text = "Data Source=v3dedb01;Initial Catalog=RatingsAndReviews;Integrated Security=True";
+            this.txtConnectionString.Text = "Data Source=[Server];Initial Catalog=[db];Integrated Security=True";
             // 
             // label1
             // 
