@@ -8,30 +8,29 @@ By creating DbContext and Poco classes at runtime using C# Compiler, this librar
 
 #### Creating & Loading:
 
-db = new DbAdapter(ConnectionString);
-db.Load();
+*db = new DbAdapter(ConnectionString);
+db.Load();*
 
 #### Query:
 
 ie: find a User inside your User Table
 
-var user = (from u in (IEnumerable<dynamic>)db.Instance.User
+*var user = (from u in (IEnumerable<dynamic>)db.Instance.User
 where u.UserName == "User1"
-select u).FirstOrDefault();
+select u).FirstOrDefault();*
 
 #### Creating new object:
 
 ##### ie: adding na new user and add to the DbSet
 
-var obj = db.New("User");
+*var obj = db.New("User");
 obj.UserName = "User2";
 obj.Password = "123";
+db.Add(obj);*
 
-db.Add(obj);
+#### Save:
 
-Save:
-
-db.Save();
+*db.Save();*
 
 #### Property Names Convention:
 
