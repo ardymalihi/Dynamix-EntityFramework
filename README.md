@@ -11,7 +11,7 @@ By creating DbContext and Poco classes at runtime using C# Compiler, this librar
 db = new DbAdapter(ConnectionString);
 db.Load();
 
-Query:
+#### Query:
 
 ie: find a User inside your User Table
 
@@ -21,7 +21,7 @@ select u).FirstOrDefault();
 
 #### Creating new object:
 
-ie: adding na new user and add to the DbSet
+##### ie: adding na new user and add to the DbSet
 
 var obj = db.New("User");
 obj.UserName = "User2";
