@@ -14,7 +14,7 @@ Columns cannot have the same name as their own tables.
 
 *Creating & Loading:
 
-Database db = new Database(ConnectionString);
+db = new DbAdapter(ConnectionString);
 db.Load();
 
 Query:
@@ -31,7 +31,7 @@ ie: adding na new user and add to the DbSet
 
 var obj = db.New("User");
 obj.UserName = "User2";
-obj.Password = " *";
+obj.Password = "123";
 
 db.Add(obj);
 
@@ -39,20 +39,20 @@ Save:
 
 db.Save();
 
-Property Names Convention:
+*Property Names Convention:
 
 db.Instance property has the whole Database Context
 
 Table: dbSet -> TableName (ie: db.Instance.User)
 Table With Schema -> SchemaName_TableName (ie:db.Instance.tmp_User )
 
-Foriegn Key Object access:
+*Foriegn Key Object access:
 Imagine Product and User Table
 Product ( ID, Name, Code, CreatedBy(FK), UpdatedBy(FK)) 
 Under Product should be two Virtual properties named CreatedByObject and UpdatedByObject
 Also, there should ba two Collection under User named ProductListFromCreatedBy and ProductListFromUpdatedBy
 
-Note:
+*Note:
 IpropertyNotifyChanged has been implemented
 It supports entity relationship (navigation properties)
 supports multiple primary keys
