@@ -1,4 +1,4 @@
-*Entity Framework Dynamic Model Builder
+Entity Framework Dynamic Model Builder
 
 *Easily creates Entity Data Model at runtime.
 
