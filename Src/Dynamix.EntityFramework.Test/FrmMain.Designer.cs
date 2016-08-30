@@ -82,7 +82,8 @@
             this.txtConnectionString.Name = "txtConnectionString";
             this.txtConnectionString.Size = new System.Drawing.Size(572, 20);
             this.txtConnectionString.TabIndex = 9;
-            this.txtConnectionString.Text = "Data Source=[Server];Initial Catalog=[db];Integrated Security=True";
+            this.txtConnectionString.Text = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\TestDb.mdf;In" +
+    "tegrated Security=True";
             // 
             // label1
             // 
