@@ -9,7 +9,7 @@ By creating DbContext and Poco classes at runtime using C# Compiler, this librar
 #### Creating & Loading:
 
 *db = new DbAdapter(ConnectionString);
-db.Load();*
+*db.Load();*
 
 #### Query:
 
@@ -24,9 +24,9 @@ select u).FirstOrDefault();*
 ##### ie: adding na new user and add to the DbSet
 
 *var obj = db.New("User");
-obj.UserName = "User2";
-obj.Password = "123";
-db.Add(obj);*
+*obj.UserName = "User2";
+*obj.Password = "123";
+*db.Add(obj);*
 
 #### Save:
 
